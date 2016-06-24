@@ -22,15 +22,15 @@ default['logstash']['instance_default']['create_account'] = true
 default['logstash']['instance_default']['join_groups'] = []
 default['logstash']['instance_default']['homedir'] = '/var/lib/logstash'
 
-default['logstash']['instance_default']['version']        = '1.5.4'
-default['logstash']['instance_default']['source_url']     = 'https://download.elasticsearch.org/logstash/logstash/logstash-1.5.4.tar.gz'
-default['logstash']['instance_default']['checksum']       = 'f03075ee534ce6e7667679447f56543ce05cebbdb7b65a9396a5e538bf3e9fa8'
+default['logstash']['instance_default']['version']        = '2.3.2'
+default['logstash']['instance_default']['source_url']     = 'https://download.elastic.co/logstash/logstash/logstash-2.3.2.tar.gz'
+default['logstash']['instance_default']['checksum']       = 'b3c9d943fa273c8087386736ef6809df9c5959bab870a6ab4723f58d48dd38c1'
 default['logstash']['instance_default']['install_type']   = 'tarball'
 
-default['logstash']['instance_default']['plugins_version']        = '1.4.5'
-default['logstash']['instance_default']['plugins_source_url']     = 'https://download.elasticsearch.org/logstash/logstash/logstash-contrib-1.4.5.tar.gz'
-default['logstash']['instance_default']['plugins_checksum']       = 'e4fa08cac70f97e30d4d043fcab817b72c301631713376c5c21824d5d89cae3e'
-default['logstash']['instance_default']['plugins_install_type']   = 'native' # native|tarball ( only native after 1.5 )
+default['logstash']['instance_default']['plugins_version']        = '2.3.2'
+default['logstash']['instance_default']['plugins_source_url']     = 'https://download.elastic.co/logstash/logstash/logstash-all-plugins-2.3.2.tar.gz'
+default['logstash']['instance_default']['plugins_checksum']       = '08629ce5d131574ecb8a10245d6103087b5701458e060649b3266db86a9f96be'
+default['logstash']['instance_default']['plugins_install_type']   = 'tarball'
 default['logstash']['instance_default']['plugins_check_if_installed'] = 'lib/logstash/filters/translate.rb'
 
 default['logstash']['instance_default']['log_file']   = 'logstash.log'

@@ -3,6 +3,11 @@ output {
 <% if @elasticsearch_ip -%>
     host => "<%= @elasticsearch_ip %>"
 <% end -%>
+<% if @elasticsearch_nodes -%>
+<% @elasticsearch_nodes.each do |host_port| -%>
+    hosts => "<%= @elasticsearch_ip %>"
+<% end -%>
+<% end -%>
 <% if @elasticsearch_cluster -%>
     cluster => "<%= @elasticsearch_cluster %>"
 <% end -%>
