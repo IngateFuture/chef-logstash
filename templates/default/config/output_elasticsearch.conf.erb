@@ -4,9 +4,9 @@ output {
     host => "<%= @elasticsearch_ip %>"
 <% end -%>
 <% if @elasticsearch_nodes -%>
-<%= @elasticsearch_nodes %>
+\\ <%= @elasticsearch_nodes %>
 <% @elasticsearch_nodes.each do |host_port| -%>
-    hosts => "<%= @elasticsearch_ip %>"
+    hosts => "<%= host_port %>"
 <% end -%>
 <% end -%>
 <% if @elasticsearch_cluster -%>
