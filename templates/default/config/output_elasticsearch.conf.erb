@@ -6,7 +6,8 @@ output {
 <% if @elasticsearch_nodes -%>
 \\ <%= @elasticsearch_nodes %>
 <% @elasticsearch_nodes.each do |host_port| -%>
-    hosts => "<%= host_port %>"
+\\    hosts => "<%= host_port %>"
+    hosts => <%= @elasticsearch_nodes %>
 <% end -%>
 <% end -%>
 <% if @elasticsearch_cluster -%>
