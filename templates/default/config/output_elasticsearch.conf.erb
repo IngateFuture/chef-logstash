@@ -4,7 +4,6 @@ output {
     host => "<%= @elasticsearch_ip %>"
 <% end -%>
 <% if @elasticsearch_nodes -%>
-// <%= @elasticsearch_nodes %>
     hosts => <%= @elasticsearch_nodes %>
 <% end -%>
 <% if @elasticsearch_cluster -%>
