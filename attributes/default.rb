@@ -7,6 +7,7 @@ default['logstash']['instance_default']['elasticsearch_role'] = 'elasticsearch_s
 default['logstash']['instance_default']['elasticsearch_query'] = "roles:#{node['logstash']['instance_default']['elasticsearch_role']} AND chef_environment:#{node.chef_environment}"
 default['logstash']['instance_default']['elasticsearch_cluster'] = 'logstash'
 default['logstash']['instance_default']['elasticsearch_ip'] = ''
+default['logstash']['instance_default']['elasticsearch_nodes'] = [] # [ 'host:port' ]
 default['logstash']['instance_default']['elasticsearch_port'] = ''
 default['logstash']['instance_default']['elasticsearch_embedded'] = true
 default['logstash']['instance_default']['graphite_ip'] = ''
